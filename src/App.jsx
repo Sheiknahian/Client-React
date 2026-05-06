@@ -31,19 +31,12 @@ function App() {
     <>
     <div style={{marginTop:'100px'}}>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="name" id="" /><br />
-        <input type="email" name="email" id="" /><br />
-        <input type="submit" name="" id="" />
+        <p>Your Name</p>
+        <input placeholder='Type Your Name' required style={{width:'300px', height: '30px', backgroundColor:'white', color:'black'}} type="text" name="name" id="" /><br /><br />
+        <p>Your Email</p>
+        <input placeholder='Type Your Email' required style={{width:'300px', height: '30px', backgroundColor:'white', color:'black'}} type="email" name="email" id="" /><br /><br />
+        <input style={{width:'200px', height: '30px', backgroundColor:'aqua', color:'black', border: 'none', fontWeight:'bold', borderRadius: '20px', fontSize:'18px'}} value='Submit' type="submit" name="" id="" />
       </form>
-    </div>
-    <div style={{marginTop:'10px'}}>
-      {
-        data.map(d=>
-          <div key={d.id} style={{marginTop: '5px'}}>
-            <p>Name: {d.name}</p>
-            <p>Email: {d.email}</p>
-          </div>)
-      }
     </div>
     </>
   )
