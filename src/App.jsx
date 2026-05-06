@@ -25,7 +25,8 @@ function App() {
       const users = [...data, newData];
       setData(users);
     })
-    
+    alert("Done!")
+    e.target.reset()
   }
   return (
     <>
